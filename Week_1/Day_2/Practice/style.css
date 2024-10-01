@@ -1,0 +1,30 @@
+body {
+    display: block;
+}
+.firstclass{
+padding-left: 10px;
+padding: 10px;
+margin: 5px;
+}
+h1{
+    background-color: black;
+    color: aliceblue;
+    font-family: cursive;
+
+    
+}
+h2{
+    background-color: blueviolet;
+    text-align: center;
+    color: white;
+
+}
+h3{
+    background-color: rgb(127, 193, 235);
+    text-align: right;
+    text-decoration: underline;
+}
+samp{
+    color: aqua;
+    font-family: cursive;
+}
