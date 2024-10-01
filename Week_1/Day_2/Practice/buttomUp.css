@@ -1,0 +1,24 @@
+div{
+    padding-left: 50px;
+}
+input{
+    border-radius: 25%;
+    border-color: aquamarine;
+    
+}
+.b1{
+    border-radius: 50px;
+    width: 100px;
+    border-color: aquamarine;
+    border: 2px solid aquamarine;
+}
+.b2{
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+.b3{
+    background-color: blue;
+    color: aliceblue;
+    box-shadow:black ;
+
+}
