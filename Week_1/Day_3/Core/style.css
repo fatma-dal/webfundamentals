@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0;
+
+    
+}
+body{
+    display: flex;
+    /* align-items: center; */
+    /* display: inline-block; */
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+img{
+    height: 200px;
+}
+.container{
+    background-color:grey;
+    width:50%;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    padding: 30px 10px 30px 10px;
+    /* padding-top: 100px; */
+
+
+    
+}
+.gitbloc1{
+    background-color:rgb(137, 137, 233);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 10px;
+}
+.gitbloc2{
+    background-color:pink;
+    
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    margin: 10px;
+}
+.gitbloc3{
+    background-color:white;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 10px;
+}
+h1{
+text-align: center;
+align-items: center;
+color: aliceblue;
+font-size: l50px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h4 {
+    text-align: center;
+    color: aliceblue;
+    
+}
+a{color: aquamarine;}
