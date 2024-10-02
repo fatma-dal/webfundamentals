@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+}
+.nav-links{
+    display: flex;
+}
+li{
+    display: flex;
+    margin: 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    
+}
+.btn{
+    background-color: #17A2B8;
+    font-size: large;
+    box-shadow: 5px 5px 0px black;
+}
+.nav-title{
+    color: aliceblue;
+    margin-left: 20px;
+    font-family: "Roboto", sans-serif;
+}
