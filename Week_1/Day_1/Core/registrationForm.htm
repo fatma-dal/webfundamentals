@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Registration Form</h1>
+    <label for="text" required>First Name *</label>
+    <input  type="text" required>
+    <div>
+        <label for="text">Last Name *</label>
+        <input  type="text" required> 
+    </div>
+    <div>
+        <label for="text">Email *</label>
+        <input  type="text" required>
+    </div>
+    <div>
+        <label for="text">Password *</label>
+        <input  type="text" required>
+    </div>
+    <label for="text" >Birthday:</label>
+    <input  type="text" required>
+    <div>
+        <label for="text" >Gender Identity:</label>
+        <input type="radio" name="font" value="bold" id="bold">
+        <label for="bold"><strong>Male</strong></label>
+        <input type="radio" name="font" value="normal" id="normal">
+        <label for="normal">Femal</label>
+
+    </div>
+    <div>
+        <label for="textarea">A short description about myself:</label>
+    </div>
+    <textarea name="comment" cols="20" rows="3"></textarea>
+    
+    <div>
+        <label>Favorite Language:</label>
+        <select name="fav_lang">
+            <option>JavaScript</option>
+            <option>Java</option>
+            <option>Python</option>
+            <option>C#</option>
+            <option>Ruby</option>
+            <option>Go</option>
+        </select>
+    </div>
+    <div>
+        <input type="checkbox" name="offers" 
+        id="offers" checked >
+        <label for="offers" checked >Yes,I would like 
+        to receive a periodic email updates </label>
+    </div>
+    <input type="submit" value="create Account" >
+    <p>Indicate a required field</p>
+
+</body>
+</html>
