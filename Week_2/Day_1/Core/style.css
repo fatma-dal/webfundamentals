@@ -1,0 +1,106 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: cursive;
+    
+    }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}    
+ /*                  Nav css                     */
+.nav{
+    background-color: #CCCCCC ;
+    width: 750px;
+    padding: 10px;
+}
+.nav button{
+    font-size: large;
+    color: white;
+    background-color: #2B78E4;
+    border: none;
+    padding: 3px 15px;
+    box-shadow: 4px 4px black;
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none ;
+    justify-content: space-between;
+    
+
+}
+input{
+border: 2px solid;
+}
+/*                            end nav css */
+
+/*                            coding container                        */
+
+.coding{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+/*------------------------------ ninja div ------------------------------                                         */
+
+.ninja{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+/*-------------------------------ninja1 edit---------------------------------*/
+
+.ninja1{
+    border:3px solid;
+    padding: 30px 30px;
+    display: flex;
+    gap:40px;
+    height: 130px;
+    width: 350px;
+
+}
+span{
+    color: #0A5495;
+    text-decoration: underline;
+}
+.ninja1 button{
+    background-color: #FFD966 ;
+    border: 1 px;
+    box-shadow: 3px 3px black;
+    width:70px ;
+    padding: 0px ;
+    margin-top: 30px;
+    font-size: large;
+}
+.ninja1 p{
+    font-size: small;
+}
+/*--------------------------------dojo edit----------------------------------*/
+.dojo{
+    border: 3px solid;
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content:space-around
+}
+.dojo button{
+    background-color: #93C47D ;
+    box-shadow: 4px 4px black;
+    font-size: large;
+
+}
+.dojo p{
+    font-size: larger;
+}
+#japanese{
+    padding: 50px 0px;
+}
+
+
+
