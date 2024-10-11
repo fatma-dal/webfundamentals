@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+.nav{
+    display: flex;
+    background-color:#9FC5F8 ;
+    justify-content: space-around;
+    color: aliceblue;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: large;
+
+
+}
+.nav ul{
+    
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+/* ...........sub nav.......................... */
+.subnav{
+    display: flex;
+    justify-content: center;
+    gap: 550px;
+    align-items: center;
+
+
+}
+.subnavright{
+    display: flex;
+    gap: 30px; 
+    padding: 20px 0px;
+    font-size: large;
+}
+.subnav select{
+    border: 3px solid black;
+}
+hr{
+    width: 930px;
+    margin-left: 300px;
+    
+}
+/* ............end subnav..................................... */
+
+/*.............main....................................*/
+.all{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.main{
+    display: flex;
+    gap: 100px;
+    
+    justify-content: center;
+    padding: 10px ;
+}
+.main img{
+    width: 100px;
+    border-radius: 50% ;
+}
+.card{
+    background-color: #EEEEEE;
+    padding: 15px 30px;
+}
+.card .value{
+    display: flex;
+    justify-content: space-between;
+    color: #CF2A27;
+}
+.value h3:first-child{
+    color:#337CE3;
+}
+.card p, h1{
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+}
+/*  ...........cookie styling................... */
+.cookie{
+    border: 3px solid black;
+    display: flex;
+    background-color:#EEEEEE ;
+    justify-content: center;
+    align-items: center;
+    width: 950px;
+    padding: 10px;
+    position: fixed;
+    bottom:130px;
+}
+.cookie button{
+    padding: 3px 15px;
+    border: 3px;
+    background-color: #9FC5F8 ;
+    box-shadow: 4px 4px black;
+}

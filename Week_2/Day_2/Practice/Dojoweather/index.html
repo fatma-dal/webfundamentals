@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- start nav-------------------------------------->
+        <div class="nav">
+            <h1>Dojo Weather</h1>
+            <ul>
+                <li onclick="alert('Loading weather report')">Burbank</li>
+                <li onclick="alert('Loading weather report')">Chicago</li>
+                <li onclick="alert('Loading weather report')">Dallas</li>
+            </ul>
+        </div>
+        <!-- -------------------------end nav-------------- -->
+        <!-----------start subnav-------------------------  -->
+        <div class="subnav">
+            <h2>San jose</h2>
+            <div class="subnavright">
+                <p>show temperature in</p>
+                <select name="temp" id="subtemp">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="all">
+    <div class="main">
+        
+            <div class="card">
+                <h1>Today</h1>
+                <img src="./assets/some_rain.png" alt="rain">
+                <p>some rain</p>
+                <div class="value">
+                    <h3>24</h3>
+                    <h3>18°</h3>
+                </div>
+            </div>
+            <div class="card">
+                <h1>today</h1>
+                <img src="./assets/some_sun.png" alt="sun">
+                <p>some rain</p>
+                <div class="value">
+                    <h3 id="h33">°F</h3>
+                    <h3>18°</h3>
+                </div>
+            </div>
+            <div class="card">
+                <h1>today</h1>
+                <img src="./assets/some_clouds.png" alt="cloud">
+                <p>some rain</p>
+                <div class="value">
+                    <h3>24</h3>
+                    <h3>18°</h3>
+                </div>
+            </div>
+            <div class="card">
+                <h1>today</h1>
+                <img src="./assets/some_sun.png" alt="sun">
+                <p>some rain</p>
+                <div class="value">
+                    <h3>24°</h3>
+                    <h3>18°</h3>
+                </div>
+            </div>
+            <!-- end main ----------------------- -->
+        </div>
+        
+        <!-- start cookie---------------------- -->
+    <div class="cookie" id="cookiee">
+        <img src="./assets/cookie.png" alt="cookie img">
+        <div class="cokieinfo">
+            <h3>Stop! Cookie time</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quo, culpa quas quidem asperiores provident recusandae quaerat at vero ab repellat quos veniam sint laboriosam vel iste reprehenderit earum! Exercitationem.</p>
+        </div>
+        <button onclick="removeCookie('#cookiee')">Accept</button>
+    </div>
+    <!-- end cookie-------------------------------- -->
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
