@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poke restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ------------------start main div---------------- -->
+    <div class="main">
+        <!-- --------------start sidenav div-------------- -->
+        <div class="sidenav">
+            <img src="./assets/logo.png" alt="logo">
+            <ul>
+                <li>About us</li>
+                <li>Menu</li>
+                <li>Catering</li>
+                <li>Hours</li>
+            </ul>
+            <p>
+                mon - fri 11 am - 10 pm <br>
+                sat 12 pm - 1 am <br>
+                sun 12 pm - 9 pm
+            </p>
+            <h3>Locations</h3>
+            <img src="./assets/map.png" alt="map">
+            <h3 onclick="alert('call us at 555-555')">Contact Us</h3>
+        </div>
+        <!-- ---------------end  sidenav div-------------- -->
+        <!-- ---------------star mainright div------------ -->
+        <div class="mainright">
+            <!-- ------------video-------------------- -->
+            <video src="./assets/video.webm"></video>
+            <!-- ------------start bluered div-------- -->
+            <div class="bluered">
+                <!-- ---------start blue div------------ -->
+                <div class="blue">
+                    <h1>Poke your way</h1>
+                    <div class="numb" id="one" onmouseover="option('#one')">
+                        <p>1</p>
+                        <h2>choose your protein</h2>
+                    </div>
+                    <div class="numb" id="two" onmouseover="option('#two')">
+                        <p>2</p>
+                        <h2>pick your base</h2>
+                    </div>
+                    <div class="numb" id="three" onmouseover="option('#three')">
+                        <p>3</p>
+                        <h2>select a marinade</h2>
+                    </div>
+                </div>
+                <!-- ---------end blue div------------------------ -->
+                <!-- ---------start red div------------------------- -->
+                <div class="red">
+                    <div class="name">
+                        <h1>poke</h1>
+                        <img src="./assets/pronounciation.png" alt="pronounciation">
+                    </div>
+                    <div class="info">
+                        <h3><em>noun</em></h3>
+                        <p>
+                            Pronounced (Po-kay) A popular Hawaiian dish of marinated,diced raw fish served over rice
+                        </p>
+                    
+                    <div class="sound">
+                        <h1>&nbsp;</h1>  <!---empty h1---->
+                        <img src="./assets/sound-dark.png" alt="sound icon" onclick="playAudio(this,'#aud')" >
+                        <audio src="./assets/poke.mp3" id="aud"></audio>
+                    </div>
+                    </div>
+                </div>
+                <!-- ----------end red div--------------------------- -->
+            </div>
+            <!-- --------------end bluered div--------- -->
+        </div>
+        <!-- -----------------end mainright div---------- -->
+    </div>
+    <!----------------------end main div----------------- --> 
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
