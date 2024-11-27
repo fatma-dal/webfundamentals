@@ -1,0 +1,22 @@
+ul{
+  font-family: sans-serif;
+  list-style: none;
+  font-size: 30px;
+  
+  color: rgb(150, 116, 65);
+}
+li{
+  padding-bottom: 10px;
+}
+h1 {
+  padding-left: 30px;
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: rgb(40, 123, 53);
+
+}
+h3{
+  padding-left: 30px;
+  font-size: 37px;
+  color: blueviolet;
+}
