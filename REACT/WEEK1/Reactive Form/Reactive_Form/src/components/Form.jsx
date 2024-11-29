@@ -14,7 +14,7 @@ function Form() {
     const [Message, setMessage] = useState('')
     const [Message2, setMessage2] = useState('')
 
-    
+
 
     const psswordhandler = (e) => {
         setPassWord(e.target.value)
@@ -27,8 +27,6 @@ function Form() {
 
     const confirmehandler = (e) => {
         setConfirmePW(e.target.value)
-        console.log(PassWord + '**********')
-        console.log(ConfirmePW + '///////////')
         if (e.target.value != PassWord) {
             setConfirmeMassege('Confirm password does not match')
 
@@ -47,7 +45,7 @@ function Form() {
 
     const nameChanges = (e) => {
         setFirstName(e.target.value)
-        // useState('')
+        
         if (FirstName.length < 2) {
             setMessage('First Name must be at least 2 charachters')
 
@@ -67,43 +65,107 @@ function Form() {
         }
 
     }
-    // const nameValidation =()=>{
+    
+    const [users, setUsers] = useState([]); // Store list of users
+    const [header, setHeader] = useState("Welcome to User Registration"); // Dynamic header
 
+        const submithandler = (e) => {
+            e.preventDefault();
+            const newUser = { FirstName, lastName, Email };
+            setUsers([...users, newUser]);
+        
+            // Clear inputs
+            setFirstName("");
+            setLastName("");
+            setEmail("");
+            setPassWord("");
+            setConfirmePW("");
+            setMessage("");
+            setMessage2("");
+            setEmailMassege("");
+            setPassWordMassage("");
+            setConfirmeMassege("");
+        
+
+            setHeader("Thank you for registering!");
+        };
 
     return (
-        <div className='container'>
-            <form >
-            <div className='label'>
-                <label name='name' >Fist Name </label>
-                <input type="text" placeholder='Please enter first name ' onChange={nameChanges} />
+            <div className="container">
+            <h1>{header}</h1>
+            <form onSubmit={submithandler}>
+            <div className="label">
+                <label htmlFor="name">First Name </label>
+                <input
+                type="text"
+                placeholder="Please enter first name"
+                value={FirstName}
+                onChange={nameChanges}
+                />
             </div>
-            <div>
-                <p>{Message}</p>
-            </div>
-            <div className='label'>
-                <label name='last'>Last Name </label>
-                <input type="text" placeholder='Please enter last name' onChange={lastnamehandler} />
+            <p>{Message}</p>
+            <div className="label">
+                <label htmlFor="last">Last Name </label>
+                <input
+                type="text"
+                placeholder="Please enter last name"
+                value={lastName}
+                onChange={lastnamehandler}
+                />
             </div>
             <p>{Message2}</p>
-            <div className='label'>
-                <label name='email' >Email </label>
-                <input type="email" placeholder='Please enter your email' onChange={emailhandler} />
+            <div className="label">
+                <label htmlFor="email">Email </label>
+                <input
+                type="email"
+                placeholder="Please enter your email"
+                value={Email}
+                onChange={emailhandler}
+                />
             </div>
             <p>{EmailMessage}</p>
-            <div className='label'>
-                <label name='pasword'>Pasword </label>
-                <input type="password" placeholder='Please enter password' onChange={psswordhandler} />
+            <div className="label">
+                <label htmlFor="password">Password </label>
+                <input
+                type="password"
+                placeholder="Please enter password"
+                value={PassWord}
+                onChange={psswordhandler}
+                />
             </div>
             <p>{PassWordMassage}</p>
-            <div className='label'>
-                <label name='pasword'>Confirme Pasword </label>
-                <input type="password" onChange={confirmehandler} />
+            <div className="label">
+                <label htmlFor="confirmPassword">Confirm Password </label>
+                <input
+                type="password"
+                placeholder="Confirm your password"
+                value={ConfirmePW}
+                onChange={confirmehandler}
+                />
             </div>
             <p>{ConfirmeMassege}</p>
-        </form>
-        
-    </div >
-)
-}
+            <button type="submit">Create User</button>
+            </form>
+    
+            <div>
+            <h2>Registered Users</h2>
+            {users.map((user, index) => (
+                <div key={index} className="user-card">
+                <p>
+                    <strong>First Name:</strong> {user.FirstName}
+                </p>
+                <p>
+                    <strong>Last Name:</strong> {user.lastName}
+                </p>
+                <p>
+                    <strong>Email:</strong> {user.Email}
+                </p>
+                </div>
+            ))}
+            </div>
+        </div>
+        );
+    }
+
 
 export default Form
