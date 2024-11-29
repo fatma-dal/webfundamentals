@@ -66,29 +66,29 @@ function Form() {
 
     }
     
-    const [users, setUsers] = useState([]); // Store list of users
-    const [header, setHeader] = useState("Welcome to User Registration"); // Dynamic header
+    const [users, setUsers] = useState([])// Store list of users
+    const [header, setHeader] = useState("Welcome to User Registration") // Dynamic header
 
         const submithandler = (e) => {
-            e.preventDefault();
-            const newUser = { FirstName, lastName, Email };
-            setUsers([...users, newUser]);
+            e.preventDefault()
+            const newUser = { FirstName, lastName, Email }
+            setUsers([...users, newUser])
         
             // Clear inputs
-            setFirstName("");
-            setLastName("");
-            setEmail("");
-            setPassWord("");
-            setConfirmePW("");
-            setMessage("");
-            setMessage2("");
-            setEmailMassege("");
-            setPassWordMassage("");
-            setConfirmeMassege("");
+            setFirstName("")
+            setLastName("")
+            setEmail("")
+            setPassWord("")
+            setConfirmePW("")
+            setMessage("")
+            setMessage2("")
+            setEmailMassege("")
+            setPassWordMassage("")
+            setConfirmeMassege("")
         
 
-            setHeader("Thank you for registering!");
-        };
+            setHeader("Thank you for registering!")
+        }
 
     return (
             <div className="container">
