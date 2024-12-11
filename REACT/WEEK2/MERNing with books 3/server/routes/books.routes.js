@@ -11,7 +11,7 @@ const router = Router();
 
 router.route("/books").post(create).get(getAllBooks);
 router
-	.route("/books/:id")
+	.route("/books/:id/details")
 	.get(getOneBook)
 	.put(updateOneBook)
 	.delete(deleteOneBook);

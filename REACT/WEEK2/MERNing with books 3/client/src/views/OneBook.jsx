@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 
     useEffect(() => {
         axios
-            .get(`http://localhost:8000/api/books/${id}/details`)
+            .get(`http://localhost:5000/api/books/${id}/details`)
             .then((res) => {
                 console.log(res.data);
                 setOneBookDetails(res.data);
@@ -23,7 +23,7 @@ import { useNavigate } from "react-router-dom";
 
     const deleteBook = () => {
         axios
-            .delete(`http://localhost:8000/api/books/${id}/details`)
+            .delete(`http://localhost:5000/api/books/${id}/details`)
             .then((res) => {
                 console.log(res.data);
                 navigate("/");
